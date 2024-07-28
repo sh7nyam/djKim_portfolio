@@ -2,23 +2,23 @@
   <div id="app">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand mainStyle " href="#">My Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="nav-collapse">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#profile">Profile</a>
+        <div class="collapse navbar-collapse " id="nav-collapse">
+          <ul class="navbar-nav me-auto text-dark">
+            <li class="nav-item leftMargin">
+              <a class="nav-link text-dark" href="#profile">Profile</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+            <li class="nav-item leftMargin">
+              <a class="nav-link text-dark" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certifications">Certifications</a>
+            <li class="nav-item leftMargin">
+              <a class="nav-link text-dark" href="#certifications">Certifications</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+            <li class="nav-item leftMargin">
+              <a class="nav-link text-dark" href="#projects">Projects</a>
             </li>
           </ul>
         </div>
@@ -27,14 +27,29 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col">
+            <!-- todo: 프로필 -->
             <section id="profile" class="my-5">
               <div class="card profile-card">
                 <div class="card-body">
                   <h2 class="card-title">Profile</h2>
-                  <p class="card-text">Hello! I'm [Your Name], a web developer specializing in modern JavaScript frameworks.</p>
+
+                  <p class="card-text me-3">
+                    이름 KIM DONG JU<br>
+                    <br>
+                    생년월일 1998.07.04<br>
+                    <br>
+                    최종학력 한국방송통신대학교 컴퓨터과학과 4학년 (휴학)<br>
+                    * 1학기만 남은 상태이며, 방통대는 전체 온라인수업으로 진행합니다.<br>
+
+                  </p>
+                  <p class="card-text">
+                    경력
+                    
+                  </p>
                 </div>
               </div>
             </section>
+            <!-- todo : 스킬 -->
             <section id="skills" class="my-5">
               <div class="card skills-card">
                 <div class="card-body">
@@ -49,6 +64,7 @@
                 </div>
               </div>
             </section>
+            <!-- todo: 자격증 -->
             <section id="certifications" class="my-5">
               <div class="card certifications-card">
                 <div class="card-body">
@@ -61,6 +77,7 @@
                 </div>
               </div>
             </section>
+            <!-- todo: 팀프로젝트 -->
             <section id="projects" class="my-5">
               <div class="card projects-card">
                 <div class="card-body">
@@ -100,6 +117,17 @@ export default {
 </script>
 
 <style>
+
+.mainStyle{
+  margin-left: 2vw;
+  font-size: large;
+}
+.leftMargin{
+  text-align: center;
+  font-weight: 800;
+  margin-left: 1vw;
+  width: 10vw;
+}
 body {
   font-family: Arial, sans-serif;
 }
